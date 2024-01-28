@@ -1,5 +1,15 @@
 # Great Papers
 
+## 2021 
+
+### [Power of data in quantum machine learning](https://www.nature.com/articles/s41467-021-22539-9) by Huang et al (9pp)
+
+### [TensorFlow Quantum: A Software Framework for Quantum Machine Learning](https://arxiv.org/pdf/2003.02989.pdf) by Broughton et al (56pp)
+
+## 2019 
+
+### [Quantum supremacy using a programmable superconducting processor](https://www.nature.com/articles/s41586-019-1666-5) by Arute et al (7pp)
+
 ## 2018
 
 ### [Deep Contextualized Word Representations](https://aclanthology.org/N18-1202.pdf) by Peters et al (11pp)
@@ -159,7 +169,12 @@ Useful vocabulary:
 
 ## 2001
 
+### [Greedy Function Approximation: A Gradient Boosting Machine](https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-5/Greedy-function-approximation-A-gradient-boosting-machine/10.1214/aos/1013203451.full) by Friedman (44pp)
+
+* origin of term "gradient boosting"
+
 ### [Random Forests](https://link.springer.com/content/pdf/10.1023/A:1010933404324.pdf) by Breiman (28pp)
+
 
 ## 1999
 
@@ -172,6 +187,8 @@ Useful vocabulary:
 ## 1996
 
 ### [Bagging Predictors](https://link.springer.com/content/pdf/10.1007/BF00058655.pdf) by Breiman (18pp)
+
+### [Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer](https://arxiv.org/pdf/quant-ph/9508027.pdf) by Peter W. Shor (28pp)
 
 ## 1995
 
