@@ -103,9 +103,47 @@ HBR's 10 Must Reads
 
 ## Why You Need an AI Ethics Committee
 
+* Bias isn't just a technical problem, and it will creep into machine learning, and an AI ethics committee can identify and mitigate ethical risks
+
+* Who should be on the committee?
+    - ethics experts
+    - lawyers
+    - business strategists
+    - technologists
+    - bias scouts and SMEs
+
 ## Robots Need Us More Than We Need Them 
+
+* Companies that scale investments in key digital technologies (e.g., cloud, AI) are able to generate revenue at twice the speed of other companies
+
+* Capabilities required to deliver AI value from data:
+    1. modern data engineering
+    2. AI-assisted data governance (cleansing, classifying, securing)
+    3. data democratization
+
+* IDEAS framework:
+    - **Intelligence**: human intelligence and artificial intelligence are complementary
+    - **Data**: transition business to be data-driven
+    - **Expertise**: use technology to allow your employee's expertise - e.g., ML that leveraged Etsy's deep knowledge of style
+    - **Architecture**: adapt IT infrastructure to be boundaryless, adaptable, and radically human
+    - **Strategy**: incorporate technology into your business strategy (e.g., Amazon's AWS, Ocado's automation platform)
 
 ## Ste Tinkering with AI
 
+* Many companies are experimenting with AI, and not funding or prioritizing AI enough to unlock its transformational potential
+
+* How to transform business using AI:
+    1. Know what you want to accomplish. (Be specific)
+    2. Work with an ecosystem of partners. (Don't build everything yourself.)
+    3. Master analytics. (Become data driven.)
+    4. Create a modular, flexible IT architecture. (E.g., Capital One's adoption of AWS.)
+    5. Integrate AI into existing workflows
+    6. Build solutions across the organizaiton. (Look for unified, reusable approaches.)
+    7. Create an AI governance and leadership structure
+    8. Develop and staff centers of excellence
+    9. Invest continually
+    10. Always seek new sources of data. (And not all data sources are equally useful.)
+
 ## ChatGPT Is a Tipping Point for AI
 
+* Use AI in places where failure is cheap and acceptable (e.g., creative and expressive tasks) and not dangerous (e.g., driving cars and forklifts)
