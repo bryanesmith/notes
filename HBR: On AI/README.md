@@ -66,6 +66,18 @@ HBR's 10 Must Reads
 
 ## Why You Aren't Getting More from Your Marketing AI
 
+* Fewer than 40% of companies investing in AI see gains from it
+
+* AI failure modes:
+    1. Not asking the right questions
+    2. Not recognizing the difference between the value of being right and the costs of being wrong and assuming all prediction mistakes are equivalent
+    3. Not leveraging AI's ability to make more frequent, granular decisions and instead continuing tto follow their old practices
+
+* Framework in practice:
+    1. What is the marketing problem we are trying to solve?
+    2. Is there any waste or missed opportunity in our current approach?
+    3. What is causing the waste and missed opportunities?
+
 ## The Pitfalls of Pricing Algorithms
 
 ## A Smarter Strategy for Using Robots
