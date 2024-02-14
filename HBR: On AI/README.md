@@ -54,6 +54,16 @@ HBR's 10 Must Reads
 
 ## Getting AI to Scale
 
+* Companies are applying AI for discrete use cases, failing to achieve the scale needed to achieve transformational ability
+
+* Steps:
+    1. Set the Strategy: pick a department where can make big transformations with interconnected activities with a sponsor and reusable technology and data
+    2. Structure the Team
+    3. Reimagine Business as Usual: work backwards from a vision (using design thinking), and identifying the issues with the current processes
+    4. Adapt for Organizational and Technological Change, including targeted technological investments (e.g., cloud adoption)
+    
+* After a strong organizational foothold, there's a domino effect; pursue multiple domains in parallel, building off past work
+
 ## Why You Aren't Getting More from Your Marketing AI
 
 ## The Pitfalls of Pricing Algorithms
