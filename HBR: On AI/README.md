@@ -38,7 +38,7 @@ HBR's 10 Must Reads
 
 ## Learning to Work with Intelligent Machines
 
-* Automation is undermining traditional ways of learning on the job, and people are breaking rules (and risking their jobs) to find innovative ways to learn ("shadow learning")
+* Automation is undermining traditional ways of learning on the job, and people are breaking rules (and risking their jobs) to find innovative ways to learn (**shadow learning**)
 
 * Obstacles to learning:
     1. trainees are being moved away from the "learning edge"
@@ -87,6 +87,19 @@ HBR's 10 Must Reads
 * Companies should develop a proper use case and narrative around pricing algorithm, create an owner to manage it (diffuse ownership is a problem), and create guardrails, monitors, and manual controls to override the pricing algorithm
 
 ## A Smarter Strategy for Using Robots
+
+* **"Lights Out" automation**: when automate to extent that don't need humans, and companies don't even need to turn on the lights
+
+* Two challenges of achieving "lights out" automation:
+    1. Adoption of automation technology is limited
+    2. Gaining productivity from automation comes at cost of flexibility (**zero-sum automation**)
+
+* **Positive-sum automation**: when gain productivity and flexibility as result of automation
+
+* To achieve positive-sum automation:
+    1. Companies should design technology to make it easier for employees to train and debug robots
+    2. Use a bottom-up approach to identify what tasks should be automated (solicit feedback from line employees)
+    3. Choose the right metrics for measuring success
 
 ## Why You Need an AI Ethics Committee
 
