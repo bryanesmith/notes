@@ -80,6 +80,12 @@ HBR's 10 Must Reads
 
 ## The Pitfalls of Pricing Algorithms
 
+* Pricing algorithms adjust prices in realtime to maximize profits, but constant prices changes can alienate customers, undermine their loyalty
+
+* Companies fail to assess the impact of frequent prices on customers psychologically, leading customers to question the motives of the companies
+
+* Companies should develop a proper use case and narrative around pricing algorithm, create an owner to manage it (diffuse ownership is a problem), and create guardrails, monitors, and manual controls to override the pricing algorithm
+
 ## A Smarter Strategy for Using Robots
 
 ## Why You Need an AI Ethics Committee
