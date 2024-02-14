@@ -36,3 +36,19 @@ HBR's 10 Must Reads
 
 - change mindset is cultural; even IT companies require cultural change to drive successful digital transformation 
 
+## Learning to Work with Intelligent Machines
+
+* Automation is undermining traditional ways of learning on the job, and people are breaking rules (and risking their jobs) to find innovative ways to learn ("shadow learning")
+
+* Obstacles to learning:
+    1. trainees are being moved away from the "learning edge"
+    2. experts are being distanced from the work
+    3. learners are expected to master both old and new methods
+    4. and yet, standing learning methods are presumed to be effective
+
+* Solutions:
+    - seeking struggle
+    - tapping frontline know-how
+    - redesigning roles (make sure your metrics aren't undermining adoption of new tools)
+    - curating solutions
+
