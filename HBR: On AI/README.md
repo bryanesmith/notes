@@ -52,3 +52,19 @@ HBR's 10 Must Reads
     - redesigning roles (make sure your metrics aren't undermining adoption of new tools)
     - curating solutions
 
+## Getting AI to Scale
+
+## Why You Aren't Getting More from Your Marketing AI
+
+## The Pitfalls of Pricing Algorithms
+
+## A Smarter Strategy for Using Robots
+
+## Why You Need an AI Ethics Committee
+
+## Robots Need Us More Than We Need Them 
+
+## Ste Tinkering with AI
+
+## ChatGPT Is a Tipping Point for AI
+
