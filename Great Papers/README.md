@@ -1,5 +1,9 @@
 # Great Papers
 
+## 2024
+
+### [Hallucination is Inevitable: An Innate Limitation of Large Language Models](https://arxiv.org/abs/2401.11817) by Xu et al (26pp)
+
 ## 2021 
 
 ### [Power of data in quantum machine learning](https://www.nature.com/articles/s41467-021-22539-9) by Huang et al (9pp)
@@ -56,6 +60,8 @@ Useful vocabulary:
 ### [Meet Michelangelo: Uber’s Machine Learning Platform](https://www.uber.com/blog/michelangelo-machine-learning-platform/) by Hermann
 
 ### [Spanner, TrueTime and the CAP Theorem](https://research.google/pubs/pub45855/) by Brewer (7pp)
+
+### [Understanding Deep Learning Requires Rethinking Generalization](https://arxiv.org/pdf/1611.03530.pdf) by Zhang et al (15pp)
 
 ## 2016
 
