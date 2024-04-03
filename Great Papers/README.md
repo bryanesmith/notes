@@ -2,6 +2,8 @@
 
 ## 2024
 
+### [The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits](https://arxiv.org/abs/2402.17764) by Ma et al (8pp)
+
 ### [Hallucination is Inevitable: An Innate Limitation of Large Language Models](https://arxiv.org/abs/2401.11817) by Xu et al (26pp)
 
 ## 2021 
