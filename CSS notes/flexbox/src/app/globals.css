@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Page layout, not related to examples */
+.row {
+  display: flex;
+  padding: 1em;
+}
+
+.column {
+  margin-right: 1em;
+}
+
+.column:nth-child(1) {
+  width: 500px;
+}
+
+/* misc */
+h2 {
+  font-weight: bold;
+}
+
+code {
+  background-color: black;
+  color: white;
+  padding: 0 .5em;
+  font-size: .85em;
+}
+
+
+/* Common styling for examples */
+.flex-container {
+  display: flex;
+  background-color: pink;
+  height: 200px;
+}
+
+.flex-item {
+  width: 100px;
+  height: 150px;
+  background: orange;
+  border: 1px solid black;
+}
+
+/* --- example 1 --- */
+.example-1 .flex-container {
+  flex-direction: row;
+}
+
+/* --- example 2 --- */
+.example-2 .flex-container {
+  flex-direction: column;
+}
+
+.example-2 .flex-container .flex-item {
+  height: 50px;
+  width: 300px;
+}
+
+/* --- example 3 --- */
+.example-3 .flex-container {
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* --- example 4 --- */
+.example-4 .flex-container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* --- example 5 --- */
+.example-5 .flex-container {
+  flex-direction: row;
+}
+
+.example-5 .flex-item:nth-child(2) {
+  flex-grow: 1;
+}
+
+/* --- example 6 --- */
+.example-6 .flex-container {
+  flex-direction: row;
+  align-items: center;
+}
