@@ -12,6 +12,10 @@
 
 ### [TensorFlow Quantum: A Software Framework for Quantum Machine Learning](https://arxiv.org/pdf/2003.02989.pdf) by Broughton et al (56pp)
 
+## 2020
+
+### [Scaling Laws for Neural Language Models](https://arxiv.org/pdf/2001.08361.pdf) by Kaplan et al (30pp)
+
 ## 2019 
 
 ### [Quantum supremacy using a programmable superconducting processor](https://www.nature.com/articles/s41586-019-1666-5) by Arute et al (7pp)
