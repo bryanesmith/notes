@@ -3,7 +3,9 @@
 ## Efficiently Serving LLMs
 2024/04/13
 
-* Running inference on a LLM with PyTorch and Hugging Face transformers is straightforward:
+* **Autoregressive language models** uses pass values of time series to predict future values, predicting the next word in a sequence of words
+
+* Running inference on a LLM with PyTorch and **Hugging Face Transformers** is straightforward:
     ```py
     import matplotlib.pyplot as plt
     import numpy as np
@@ -129,3 +131,14 @@
     for prompt, generated in zip(prompts, generated_tokens):
         print(prompt, f"\x1b[31m{generated}\x1b[0m\n")
     ```
+
+* **Continuous batching**: still greedily process requests as they come in, but incorporate new requests in an existing batch
+    - Significant performance improvements:
+        - Achieves both lower latency and high throughput
+        - Performance is particularly positively improved when prompts vary significantly in length, as we no longer wait for particularly long prompts to complete
+        - This is how we'll achieve the streaming token prediction used to seeing with LLM prompts
+    - Note that unlike synchronous batches, each prompt will be at a very different points in sequence (e.g., we may be starting tokens for a new prompt in the same request that we're completing another promp)
+    - To add more prompts to a running batch, we'll (1) run a **prefill step** where create a separate batch for new prompts (to fill up the batch capacity) and then (2) **merge batches** to pad the tokens so that we can merge together the original and newly created batch into single batch
+    - Then after generating the next tokens for our batch, we'll then run a **filter step** in which we (1) remove any prompts that are done, and (2) remove excess padding that was used to facilitate the "merge batches" step
+
+* `tqdm`: Python library for generating CLI progress bars
