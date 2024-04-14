@@ -1,6 +1,5 @@
-# DeepLearning.AI Short Courses
+# DeepLearning.AI Short Course: Efficiently Serving LLMs
 
-## Efficiently Serving LLMs
 2024/04/13
 
 * **Autoregressive language models** uses pass values of time series to predict future values, predicting the next word in a sequence of words
