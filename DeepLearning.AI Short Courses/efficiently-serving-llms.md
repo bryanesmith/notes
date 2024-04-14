@@ -2,6 +2,10 @@
 
 2024/04/13
 
+## Introduction
+
+## Text Generation
+
 * **Autoregressive language models** uses pass values of time series to predict future values, predicting the next word in a sequence of words
 
 * Running inference on a LLM with PyTorch and **Hugging Face Transformers** is straightforward:
@@ -75,6 +79,8 @@
     }
     ```
 
+## Batching
+
 * **Synchronous batching** (aka, **batching**) means you wait for additional inputs to run a larger batch of inputs before running inference
     - Can wait until n inputs and/or maximum amount of wait time
     - Inferently trades off latency and throughput
@@ -130,6 +136,8 @@
     for prompt, generated in zip(prompts, generated_tokens):
         print(prompt, f"\x1b[31m{generated}\x1b[0m\n")
     ```
+
+## Continuous Batching
 
 * **Continuous batching**: still greedily process requests as they come in, but incorporate new requests in an existing batch
     - Significant performance improvements:
