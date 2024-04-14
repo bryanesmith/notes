@@ -1,10 +1,11 @@
 # DeepLearning.AI Short Course: Efficiently Serving LLMs
 
-2024/04/13
+Started course: 2024/04/13
+Taught by: Travis Addair, CTO of Predibase and lead maintainer of Horovod
 
-## Introduction
+## 1. Introduction
 
-## Text Generation
+## 2. Text Generation
 
 * **Autoregressive language models** uses pass values of time series to predict future values, predicting the next word in a sequence of words
 
@@ -79,7 +80,7 @@
     }
     ```
 
-## Batching
+## 3. Batching
 
 * **Synchronous batching** (aka, **batching**) means you wait for additional inputs to run a larger batch of inputs before running inference
     - Can wait until n inputs and/or maximum amount of wait time
@@ -137,7 +138,7 @@
         print(prompt, f"\x1b[31m{generated}\x1b[0m\n")
     ```
 
-## Continuous Batching
+## 4. Continuous Batching
 
 * **Continuous batching**: still greedily process requests as they come in, but incorporate new requests in an existing batch
     - Significant performance improvements:
@@ -149,3 +150,82 @@
     - Then after generating the next tokens for our batch, we'll then run a **filter step** in which we (1) remove any prompts that are done, and (2) remove excess padding that was used to facilitate the "merge batches" step
 
 * `tqdm`: Python library for generating CLI progress bars
+
+## 5. Quantization
+
+* Note: we need trick PyTorch into thinking parameters are float32, even when not (else we get errors):
+    ```py
+    # fix dtype post quantization to "pretend" to be fp32
+    def get_float32_dtype(self):
+        return torch.float32
+    GPT2Model.dtype = property(get_float32_dtype)
+    ```
+
+* Get **memory footprint** of Hugging Face transformer model:
+    ```py
+    model.get_memory_footprint()
+    ```
+
+* **FP32** (float32) is the standard floating point representation for neural networks
+    - 23 of the bits are the **mantissa**, meaning most of the bits are for precision
+
+| Data Type | Bits | Exponent | Mantissa |
+| --------- | ---- | -------- | -------- |
+| FP32 | 32 | 8 | 23 |
+| FP16 | 16 | 5 | 10 |
+| BF16 (Brain Floating point) | 16 | 8 | 7 |
+| FP8 (E5M2) | 8 | 5 | 2 |
+
+* Note: not all hardware supports all of these data types
+
+* **Quanitization** is about compressing data, not about representing same info in smaller data types
+    - Store metadata to reconstruct data during forward pass
+    - Trades off some computation speed for smaller memory footprint
+
+* **Zero-Point Quanitization** 
+    - Compute min and max values, and then compress all numbers [min]-[max] as unsigned 8 bit integers between 0..255
+    - E.g., `[3.14063, 2.90192, 0.57782, -0.14590, -1.29091]` -> `[255, 241, 107, 65, 0]`
+    - Cannot use the integers during inference; must **dequantize** during inference (either just-in-time or before inference)
+        - Just-in-time is harder, but it's kind of the point of quantization
+    - This is a **lossy compression**, and it does have an impact on the quality of model predictions
+
+* Think of quanitization as a type of lossy compression:
+    ```py
+    def quantize(t):
+        # obtain range of values in the tensor to map between 0 and 255
+        min_val, max_val = t.min(), t.max()
+
+        # determine the "zero-point", or value in the tensor to map to 0
+        scale = (max_val - min_val) / 255
+        zero_point = min_val
+
+        # quantize and clamp to ensure we're in [0, 255]
+        t_quant = (t - zero_point) / scale
+        t_quant = torch.clamp(t_quant, min=0, max=255)
+
+        # keep track of scale and zero_point for reversing quantization
+        state = (scale, zero_point)
+
+        # cast to uint8 and return
+        t_quant = t_quant.type(torch.uint8)
+        return t_quant, state
+
+    def dequantize(t, state):
+        scale, zero_point = state
+        return t.to(torch.float32) * scale + zero_point
+    ```
+
+* To quantize a model:
+    ```py
+    def quantize_model(model):
+        states = {}
+        for name, param in model.named_parameters():
+            param.requires_grad = False
+            param.data, state = quantize(param.data)
+            states[name] = state
+        return model, states
+
+    quant_model, states = quantize_model(model)
+    quant_model.get_memory_footprint()
+    # 137022768, 137MB (4x reduction)
+    ```
