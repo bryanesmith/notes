@@ -15,6 +15,8 @@ Taught by: Travis Addair, CTO of Predibase and lead maintainer of Horovod
 
 * **LoRAX**: open source, dynamically servers hundreds of  LLMs on single GPU
 
+* **Ludwig**: low code framework for declaratively building custom AI models like LLMs 
+
 ## 1. Introduction
 
 ## 2. Text Generation
