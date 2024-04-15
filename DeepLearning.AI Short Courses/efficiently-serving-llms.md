@@ -275,3 +275,7 @@ class LoraLayer(torch.nn.Module):
 lora_layer = LoraLayer(model.linear, 2)
 model.linear = lora_layer
 ```
+
+## 7. Multi-LoRA inference
+
+* **Multi-LoRA** allows us to load one pre-trained **backbone model** and multiple different LoRAs to serve multiple fine-tuned model from a single deployment
