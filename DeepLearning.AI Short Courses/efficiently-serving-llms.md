@@ -229,3 +229,49 @@ Taught by: Travis Addair, CTO of Predibase and lead maintainer of Horovod
     quant_model.get_memory_footprint()
     # 137022768, 137MB (4x reduction)
     ```
+
+## 6. Low-Rank Adaptation
+
+* **Low-Rank Adaptation** (**LoRA**) is about fine-tuning a model without updating model parameters
+    - normally, with **fine-tuning** all model parameters are updated during backpropogation
+    - with **LoRA layers**, we only train maybe 1% of the parameters; this layer contains an original linear layer and two new tensors, `A` and `B`, where:
+        - `A` has shape `(hidden_size, rank)` where `rank << hidden_size` and `rank` is a hyperparameter
+        - `B` has shape `(rank, hidden_size)` 
+        - Note `A` and `B` have the same shape as the neighboring hidden layer, but has far fewer parameters
+
+```py
+# toy model. note the self.linear. (We'll swap with a LoRA layer.)
+class TestModel(torch.nn.Module):
+    def __init__(self, hidden_size):
+        super().__init__()
+        self.embedding = torch.nn.Embedding(10, hidden_size)
+        self.linear = torch.nn.Linear(hidden_size, hidden_size)
+        self.lm_head = torch.nn.Linear(hidden_size, 10)
+    
+    def forward(self, input_ids):
+        x = self.embedding(input_ids)
+        x = self.linear(x)
+        x = self.lm_head(x)
+        return x
+
+hidden_size = 1024
+model = TestModel(hidden_size)
+
+class LoraLayer(torch.nn.Module):
+    def __init__(self, base_layer, r):
+        super().__init__()
+        self.base_layer = base_layer
+        
+        d_in, d_out = self.base_layer.weight.shape
+        self.lora_a = torch.randn(d_in, r)
+        self.lora_b = torch.randn(r, d_out) 
+        
+    def forward(self, x):
+        y1 = self.base_layer(x)
+        y2 = x @ self.lora_a @ self.lora_b
+        return y1 + y2
+
+# swap the model's original linear layer with a LoRA layer
+lora_layer = LoraLayer(model.linear, 2)
+model.linear = lora_layer
+```
