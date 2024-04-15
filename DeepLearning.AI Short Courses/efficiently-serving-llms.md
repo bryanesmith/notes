@@ -3,6 +3,18 @@
 Started course: 2024/04/13
 Taught by: Travis Addair, CTO of Predibase and lead maintainer of Horovod
 
+## Summary
+
+* This course covered:
+    1. KV caching (prefill vs decode)
+    2. Continuous batching
+    3. Quantization
+    4. Multi-LoRA (fine-tuned model inference)
+
+* **Predibase**: deploy serverless, cost-effective, open source, fine-tuned LLMs
+
+* **LoRAX**: open source, dynamically servers hundreds of  LLMs on single GPU
+
 ## 1. Introduction
 
 ## 2. Text Generation
@@ -279,3 +291,12 @@ model.linear = lora_layer
 ## 7. Multi-LoRA inference
 
 * **Multi-LoRA** allows us to load one pre-trained **backbone model** and multiple different LoRAs to serve multiple fine-tuned model from a single deployment
+
+## 8. LoRAX
+
+* **LoRAX** is an open source LLM inference service maintained by Predibase
+
+* **Adapters** (run inference with a fine-tuned model, e.g., LoRA) available through Hugging Face Hub, Predibase, S3, etc
+    - Can significantly improve performance; e.g., **named entity recognition (NER) tasks** 
+
+* **Structured generation**: define a schema for output. (LoRAX supports Pydantic)
