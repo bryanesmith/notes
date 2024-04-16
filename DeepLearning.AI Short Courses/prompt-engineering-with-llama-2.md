@@ -57,6 +57,40 @@ Taught by: Amit Sangani (Meta)
 
 ## 3. Multi-turn Conversations
 
+* LLMs are **stateless**; if you ask follow on questions, Llama won't remember the topic and will likely change the topic
+
+* To help Llama hold a conversation, need to track the **context** of the conversation
+    - E.g., pass in prompt #1, response #1, and prompt #2
+    - The general form of a multi-turn chat prompt:
+        ```
+        User: {prompt 1}
+        Assistant: {response 1}
+        User: {prompt 2}
+        Assistant: {response 2}
+        User: {prompt 3}
+        ```
+    - Llama-2 form of multi-turn chat prompt:
+        ```
+        <s>[INST]{prompt 1}[/INST]
+        Assistant: {response 1}</s>
+        <s>[INST]{prompt 2}[/INST]
+        Assistant: {response 2}</s>
+        <s>[INST]{prompt 3}[/INST]
+        ```
+    - Where `<s>` is a **start tag**, `</s>` is an **end tag** (not we don't add end tag when prompting Llama to respond!), and `[INST]` is the **prompt tag**
+
+* If you are adding tags, make sure you disable automatically adding tags to client:
+    ```py
+    response = llama(prompt_chat, add_inst=False, verbose=True)
+    ```
+
+* Can use the Llama chat helper method, `llama_chat`:
+    ```py
+    from utils import llama_chat
+    ...
+    response = llama_chat(prompts, responses, verbose=True)
+    ```
+
 ## 4. Prompt Engineering Techniques
 
 ## 5. Comparing Different Llama 2 models
