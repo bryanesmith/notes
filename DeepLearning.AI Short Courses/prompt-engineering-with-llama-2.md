@@ -357,3 +357,7 @@ response = code_llama(prompt)
         ```
 
 ## Conclusion
+
+* Other resources:
+    - [llama-recipes](https://github.com/meta-llama/llama-recipes/) on GitHub
+    - [Llama 2: Open Foundation and Fine-Tuned Chat Models](https://scontent-iad3-2.xx.fbcdn.net/v/t39.2365-6/10000000_662098952474184_2584067087619170692_n.pdf?_nc_cat=105&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=5dpfH1zaQXAAb5tmsP_&_nc_ht=scontent-iad3-2.xx&oh=00_AfB_UuX7TPOOuNvZbKoFhdnj8JBSDtKfQPBQmu_gj4Rvew&oe=66299C3F) whitepaper (77pp)
