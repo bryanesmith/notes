@@ -84,6 +84,24 @@ a = np.fromfunction(lambda x, y: 10*x+y, (5,4), dtype=int)
 #            [40, 41, 42, 43]])
 ```
 
+## Lists
+
+* Mutable, implemented as **dynamic arrays** (similar to Java's `ArrayList`)
+    - Prepending or inserting into middle of list inefficient as must shift elements
+* Convert another collection to list using `list(("a", "b", "c"))` or `[*('a', 'b', 'c')]`
+    - `[17]` works, but `list(17)` because `list` method only accepts iterables
+* **Slicing**. E.g., `list[2:]`
+* To create an 8x8 matrix of zeros: `[[0] * 8] * 8`
+* Commonly used methods:
+    - Adding elements: `list.append(some_obj)`, `list.insert(index, some_obj)`
+    - Removing elements: `list.remove(some_obj)`, `list.pop(index)`, `list.clear()`
+    - Finding: `some_obj in list`, `list.index(some_obj)`, `list.count(some_obj)`
+    - Shallow copy: `list.copy()`
+    - Concatenate lists: `list_1 + list_2` (non-destructive), `list_1.extend(list_2)` (destructive)
+    - Sorting: `sorted(list)` (non-destructive), `list.sort()` (destructive), `list.sort(reverse=True)`
+    - `list.reverse()`
+    - `min(list)`, `max(list)`
+
 ## List comprehensions
 
 ```python
@@ -108,13 +126,13 @@ dates = [re.findall(pattern, f)[0] for f in files if re.search(pattern, f)]
 
 ## Strings
 
+* Immutable
 * Iterable using `for item in str:` or `for index, item in enumerate(str):`
 * `List(str)` or `[*str]` to convert a string to a list of characters
 * Commonly used methods:
-    - `str.startswith(substr)`, endswith
-    - Casing with `str.title()`, `str.upper()`, `str.lower()`, `str.swapcase()`
-    - `str.strip(chars)`, `str.lstrip(chars)`, `str.rstrip(chars)`, `str.removeprefix(substr)`, `str.removesuffic(substr)`
-    - `str.replace(old, new)`
+    - Testing: `str.startswith(substr)`, `str.endswith(substr)`
+    - Casing: `str.title()`, `str.upper()`, `str.lower()`, `str.swapcase()`
+    - Removing or replacing: `str.strip(chars)`, `str.lstrip(chars)`, `str.rstrip(chars)`, `str.removeprefix(substr)`, `str.removesuffic(substr)`, `str.replace(old, new)`
 
 ## Ternary Operator
 
