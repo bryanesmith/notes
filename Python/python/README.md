@@ -106,6 +106,16 @@ pattern = r"(\d{2}-\d{2}-\d{4}).csv"
 dates = [re.findall(pattern, f)[0] for f in files if re.search(pattern, f)]
 ```
 
+## Strings
+
+* Iterable using `for item in str:` or `for index, item in enumerate(str):`
+* `List(str)` or `[*str]` to convert a string to a list of characters
+* Commonly used methods:
+    - `str.startswith(substr)`, endswith
+    - Casing with `str.title()`, `str.upper()`, `str.lower()`, `str.swapcase()`
+    - `str.strip(chars)`, `str.lstrip(chars)`, `str.rstrip(chars)`, `str.removeprefix(substr)`, `str.removesuffic(substr)`
+    - `str.replace(old, new)`
+
 ## Ternary Operator
 
 ```python
