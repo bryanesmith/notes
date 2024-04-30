@@ -10,6 +10,29 @@
     assert np.isscalar(b)
     ```
 
+## Dicts
+
+* Mutable
+* Keys must be **hashable**, meaning muts be immutable
+* Constructing dicts:
+    - `dict([('key1', 'value1'), ('key2', 'value2')])`
+    - `dict(key1='value1', key2='value2')`
+    - Literals: `{'key1': 'value1'}`
+    - `dict.fromkeys(['key1', 'key2'], default_val)`
+* Accessing:
+    - `a_dict['key']` is not safe (results in `KeyError` if key not found)
+    - `a_dict.get('key', default_obj)` is safe
+* Looping
+    - `for key in a_dict:`
+    - `for key, value in a_dict.items():`
+* Since 3.7, dicts are ordered; since 3.8, dicts are reversible using `reversed(...)`
+* Useful methods:
+    - Removing: `del a_dict[key]` and `a_dict.pop(key)` not safe (`KeyError`), `a_dict.pop(key, default_val)` safe
+    - Get and set if not present: `a_dict.setdefault('key', some_val)`
+    - `a_dict.keys()`, `a_dict.values()`
+    - Can't sort dicts, but can create sorted views: `dict(sorted(a_dict.items()))`
+    - Merging: `dict_1.update(dict_2)` (destructive), `dict_1 | dict_2` (non-destructive)
+
 ## Exceptions
 
 ```python
@@ -139,6 +162,12 @@ dates = [re.findall(pattern, f)[0] for f in files if re.search(pattern, f)]
 ```python
 min = a if a < b else b 
 ```
+
+## Tuples
+
+* Immutable
+* Constructed using `()` literal or `tuple(some_collection)`
+* Supports same indexing and slicing as lists
 
 ## Type hints
 
