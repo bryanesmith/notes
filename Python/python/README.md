@@ -10,6 +10,36 @@
     assert np.isscalar(b)
     ```
 
+## Classes
+
+```py
+class MyClass:
+    number = 17     # class attr
+    string = "hi!"  # class attr
+
+obj = MyClass()
+obj.number 
+```
+
+* **dunder method**: **d**ouble **under**score **method**
+
+```py
+class MyClass:
+    counter = 0             # class attr
+
+    def __init__(self, loc):
+        self.x = loc[0]     # instance attr
+        self.y = loc[1]     # instance attr
+    
+    def increment_counter(self):
+        MyClass.counter += 1    
+
+obj = MyClass((1,2))
+obj.x 
+obj.increment_counter()
+obj.counter
+```
+
 ## Dicts
 
 * Mutable
@@ -143,8 +173,17 @@ z = [x.int() for x in "testing 123" if x.isdigit()]
 ```python
 import re
 
+# Find dates in files with name: mm-dd-yyyy.csv
 pattern = r"(\d{2}-\d{2}-\d{4}).csv"
 dates = [re.findall(pattern, f)[0] for f in files if re.search(pattern, f)]
+
+# Find any non-numeric characters
+pattern = "[^0-9]"
+p = re.compile(pattern) 
+# or in one line: p = r"[^0-9]"
+input = '856961Z503833437'
+if re.search(p, input):
+    print('Found a non-numeric character')
 ```
 
 ## Sets
