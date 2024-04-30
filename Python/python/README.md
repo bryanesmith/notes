@@ -31,7 +31,7 @@
     - Get and set if not present: `a_dict.setdefault('key', some_val)`
     - `a_dict.keys()`, `a_dict.values()`
     - Can't sort dicts, but can create sorted views: `dict(sorted(a_dict.items()))`
-    - Merging: `dict_1.update(dict_2)` (destructive), `dict_1 | dict_2` (non-destructive)
+    - Merging: `dict_1.update(dict_2)` or `dict_1 |= dict_2` (destructive), `dict_1 | dict_2` (non-destructive)
 
 ## Exceptions
 
@@ -146,6 +146,30 @@ import re
 pattern = r"(\d{2}-\d{2}-\d{4}).csv"
 dates = [re.findall(pattern, f)[0] for f in files if re.search(pattern, f)]
 ```
+
+## Sets
+
+* Mutable and unordered collection
+    - Not permitted: indexing, slicing, contatenation with `+`
+* Duplicate items are ignored
+* Construction:
+    - Literals: `{ obj_1 }`
+    - Constructor: `set(an_iterable)`
+    - Note: `{'abc'}` -> `{'abc'}`, but `set('abc')` -> `{'b', 'a', 'c'}`
+* All set elements must be hashable, meaning they must be immutable (e.g., sets can't hold lists, other sets, dicts, etc)
+* Useful methods:
+    - Add: `a_set.add(some_obj)`
+    - Iteration: `for item in a_set:`
+    - Membership: `item in a_set`, `item not in a_set`
+    - `len(a_set)`
+    - `a_set.copy()`
+    - Disjoint: `set_1.isdisjoint(coll_2)`
+    - Subsets: `set_1.issubset(coll_2)`, `set_1 <= set_2`
+    - Superset: `set_1.issuperset(coll_2)`, `set_1 >= set_2`
+    - Intersection: `set_1.intersection(iterable_2)`, `set_1 & set_2`
+    - Union: `set_1.union(set_2)`, `set_1 | set_2`
+    - Difference: `set_1.difference(iterable_2)`, `set_1 - set_2`
+    - "Symmetric difference" returns elects in either but not both sets: `set_1.symmetric_difference(iterable_2)`, `set_1 ^ set_2`
 
 ## Strings
 
