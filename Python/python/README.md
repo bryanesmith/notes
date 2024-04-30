@@ -125,6 +125,12 @@ with open(file, 'w') as writer:
     writer.write(str) # Doesn't automatically add newline
 ```
 
+## Generators
+
+* A **generator** is a function/expression that returns a special type of iterator called a **generator iterator**
+    - Generator iterators are **lazy**, meaning do not store values in memory, but are generated on demand
+    - These iterators contain `yield`
+
 ## Lambdas
 
 ```python
