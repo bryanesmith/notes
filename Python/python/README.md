@@ -206,21 +206,34 @@ z = [x.int() for x in "testing 123" if x.isdigit()]
 
 ## Regular expressions
 
-```python
-import re
+* If found:
+    ```python
+    # Find any non-numeric characters
+    p = r"[^0-9]"
 
-# Find dates in files with name: mm-dd-yyyy.csv
-pattern = r"(\d{2}-\d{2}-\d{4}).csv"
-dates = [re.findall(pattern, f)[0] for f in files if re.search(pattern, f)]
+    # Same as:
+    #pattern = "[^0-9]"
+    #p = re.compile(pattern) 
 
-# Find any non-numeric characters
-pattern = "[^0-9]"
-p = re.compile(pattern) 
-# or in one line: p = r"[^0-9]"
-input = '856961Z503833437'
-if re.search(p, input):
-    print('Found a non-numeric character')
-```
+    input = '856961Z503833437' # note contains a 'Z'
+    if re.search(p, input):
+        print('Found a non-numeric character')
+    ```
+
+* Find captured values:
+    ```python
+    import re
+
+    # Find dates in files with name: mm-dd-yyyy.csv
+    pattern = r"(\d{2}-\d{2}-\d{4}).csv"
+    dates = [re.findall(pattern, f)[0] for f in files if re.search(pattern, f)]
+    ```
+
+* Replace:
+    ```python
+    import re
+    re.sub(r'\s', '', "He\tllo, \n World!" )
+    ```
 
 ## Sets
 
