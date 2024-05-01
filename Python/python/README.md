@@ -131,6 +131,36 @@ with open(file, 'w') as writer:
     - Generator iterators are **lazy**, meaning do not store values in memory, but are generated on demand
     - These iterators contain `yield`
 
+```py
+# finite
+def powers(numbers, power):
+    for num in numbers:
+        yield num ** power
+
+gen = powers([1, 2, 3, 4, 5], 2)
+for val in gen:
+    print(val) # 1 4 9 16 25
+```
+
+* Can access values using `next(some_generator)`, which calls the `__next__()` method on the object
+    - When generator is fully consumed, calling `next` will raise a `StopIteration`
+* Generators are one-way; cannot revisit previous values
+* Generators cannot be reversed or sorted
+* Generators cannot use `len(generator)`
+
+```py
+def infinite_counter():
+    num = 0
+    while True:
+        yield num
+        num += 1
+
+gen = infinite_counter()
+next(gen)
+next(gen)
+next(gen)
+```
+
 ## Lambdas
 
 ```python
