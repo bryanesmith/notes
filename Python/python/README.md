@@ -40,6 +40,76 @@ obj.increment_counter()
 obj.counter
 ```
 
+* Special methods:
+    - `__init__`
+    - `__str__`
+    - `__eq__` and `__ne__`
+    - `__hash__`
+    - `ininstance(obj, SomeClass)`
+    - `type(obj)` # some class
+
+* Inheritance:
+    ```py
+    class Polygon:
+        def __init__(self, side_count):
+            self.side_count = side_count
+    
+    class Triangle(Polygon):
+        def __init__(self):
+            super().__init__(3)
+        def __str__(self):
+            return f'A triangle has {self.side_count} sides'
+    ```
+
+* Abstract classes using the **Abstract Base Class** module in Python:
+    ```py
+    from abc import ABC, abstractmethod, abstractproperty
+
+    class Animal(ABC):
+
+        def breath(self):
+            print('Takes a breath')
+
+        @abstractmethod
+        def move(self):
+            pass
+
+        @abstractproperty
+        def arm_count(self):
+            pass
+    
+    class Human(Animal):
+
+        def __init__(self, name):
+            self.name = name
+        
+        def move(self):
+            print("Walks on 2 legs")
+        
+        @property
+        def arm_count(self):
+            return 2
+    
+    cj = Human('CJ Abrams')
+    cj.name
+    cj.move()
+    cj.arm_count
+    ```
+
+* Class mixins:
+    ```py
+    class FlyingMixin:
+        def fly(self):
+            print("I'm flying")
+    
+    class Bird:
+        def chirp(self):
+            print("Chirp chirp!")
+    
+    class Parrot(Bird, FlyingMixin):
+        pass
+    ```
+
 ## Dicts
 
 * Mutable
