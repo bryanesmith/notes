@@ -119,15 +119,9 @@ obj.counter
 * Very useful if need an unordered set that contains non-unique items (hence can't use `set`). E.g.,:
     ```python
     from collections import Counter
-    
-    def string_to_dict(word: str, must_match_dict = None) -> dict[str, int]:
-        d = {}
-        for c in word:
-            d[c] = d.get(c, 0) + 1
-        return d
 
     def closeStrings(self, word1: str, word2: str) -> bool:
-        d1, d2 = string_to_dict(word1), string_to_dict(word2)
+        d1, d2 = Counter(word1), Counter(word2)
         # Note: d1.values() != d2.values() but Counter(d1.values()) == Counter(d2.values())
         return d1.keys() == d2.keys() and Counter(d1.values()) == Counter(d2.values())
 
