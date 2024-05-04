@@ -2,10 +2,11 @@
 
 ## Assertions
 
-* Signal unrecoverable errors
+* Signal unrecoverable errors with `AssertionError`
+* Can add optional error message
 * E.g., the following shape errors would be unrecoverable:
     ```python
-    assert y.shape == (20,)
+    assert y.shape == (20,), f'Found unexpected shape: {y.shape}'
     assert X.shape == (20,1)
     assert np.isscalar(b)
     ```
