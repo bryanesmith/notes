@@ -133,6 +133,25 @@ obj.counter
     - Can't sort dicts, but can create sorted views: `dict(sorted(a_dict.items()))`
     - Merging: `dict_1.update(dict_2)` or `dict_1 |= dict_2` (destructive), `dict_1 | dict_2` (non-destructive)
 
+## Enums
+
+```python
+from enum import Enum 
+
+class Coin(Enum):
+    PENNY = 1
+    NICKEL = 5
+    DIME = 10
+    QUARTER = 25
+
+def change_due(value_in_cents: int) -> dict[Coin, int]:
+    change = {}
+    for coin_type in [Coin.QUARTER, Coin.DIME, Coin.NICKEL, Coin.PENNY]:
+        change[coin_type] = int(value_in_cents / coin_type.value)
+        value_in_cents %= coin_type.value
+    return change
+```
+
 ## Exceptions
 
 ```python
