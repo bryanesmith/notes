@@ -373,12 +373,9 @@ min = a if a < b else b
 
 ## Type hints
 
-```python
-from typing import List
-
-def load_data(file_name: str) -> List[str]:
-    pass
-```
+* E.g.,
+    - `dict[Coin, int]`
+    - `list[tuple[Coin,int]]`
 
 ## Examples
 
