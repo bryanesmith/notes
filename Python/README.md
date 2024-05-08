@@ -36,6 +36,38 @@
     to_bin(17) # [1, 0, 0, 0, 1]
     ```
 
+* To convert a binary to decimal number:
+    ```py
+    int('100', 2) # 4
+    int('0b100', 2) # 4
+
+    # if array:
+    def to_decimal(digits: list[int]) -> int:
+        digits = [str(d) for d in digits] # convert to str
+        return int(''.join(digits), 2)
+
+    # or to do it manually:
+    def to_decimal(digits: list[int]) -> int:
+        val = 0
+        for d in digits:
+            val = val * 2 + d
+        return val
+    ```
+
+* Bitwise operators:
+    ```py
+    >>> 2 << 6 # shift left
+    128
+    >>> 128 >> 6 # shift right
+    2
+    >> 14 & 5 # 1110 and 0101 -> 0100
+    4
+    >> 14 | 5 # 1110 or 0101 -> 1111
+    14
+    >> 14 ^ 5 # 1110 xor 0101 -> 1011
+    11
+    ```
+
 ## Classes
 
 ```py
