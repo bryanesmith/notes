@@ -11,6 +11,31 @@
     assert np.isscalar(b)
     ```
 
+## Bits and binary numbers
+
+* To convert an integer to a binary string:
+    ```py
+    >>> bin(2)
+    '0b10'
+    ```
+* To convert a character to it's ASCII code:
+    ```py
+    >>> ord('7')
+    55
+    >>> ord('7')-ord('0')
+    7
+    >>> int('7')
+    ```
+
+* To convert a number to binary array:
+    ```py
+    def to_bin(n):
+        # int(c) same as ord(c) - ord('0')
+        return [int(c) for c in bin(n)[2:]]
+    
+    to_bin(17) # [1, 0, 0, 0, 1]
+    ```
+
 ## Classes
 
 ```py
@@ -371,6 +396,11 @@ z = [x.int() for x in "testing 123" if x.isdigit()]
 * Immutable
 * Iterable using `for item in str:` or `for index, item in enumerate(str):`
 * `List(str)` or `[*str]` to convert a string to a list of characters
+* To split a string on any whitespace:
+    ```py
+    >>> " \nfoo\tbar    baz ".split()
+    ['foo', 'bar', 'baz']
+    ```
 * Commonly used methods:
     - Testing: `str.startswith(substr)`, `str.endswith(substr)`
     - Casing: `str.title()`, `str.upper()`, `str.lower()`, `str.swapcase()`
