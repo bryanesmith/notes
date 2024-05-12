@@ -8,6 +8,22 @@
 
 * **Kubernetes** automates the distribution and scheduling of application containers across a cluster in a more efficient way.
 
+### Architecture
+
+![K8s architecture](images/k8s-architecture.png) 
+[source](https://www.youtube.com/watch?v=TlHvYWVUZyc)
+
+| Component | Location | Responsibility |
+| --------- | -------- | -------------- |
+| Control Plane | Running across multiple distributed master nodes | Controlling state of cluster |
+| API Server | Control Plane | Interface between user and control plane, and control plane and  |
+| etcd | Control Plane | Distributed key-value store storing cluster's persistent state | 
+| Scheduler | Control Plane | Schedules pods onto worker nodes, based on available resources |
+| Controller Manager | Control Plane | Runs controllers (e.g., ReplicationController, DeploymentController) which take action on cluster (e.g., ensure exactly 4 replicas; managing rolling deployments) |
+| kubelet | Worker Node | Receives instructions from (and communicates with) control plane |
+| kube-proxy | Worker Node | Networking proxy that routes traffic and load balances to containers |
+| container runtime | Worker Node | Pulls images from container registry, starts and stops containers, managed container resources |
+
 ### Clusters
 
 * A **Kubernetes cluster** consists of two types of resources:
