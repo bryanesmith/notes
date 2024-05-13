@@ -4,11 +4,11 @@
 
 * [Learn Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
 
-## Concepts
+## About
 
 * **Kubernetes** automates the distribution and scheduling of application containers across a cluster in a more efficient way.
 
-### Architecture
+## Architecture
 
 ![K8s architecture](images/k8s-architecture.png) 
 [source](https://www.youtube.com/watch?v=TlHvYWVUZyc)
@@ -23,6 +23,12 @@
 | kubelet | Worker Node | Receives instructions from (and communicates with) control plane |
 | kube-proxy | Worker Node | Networking proxy that routes traffic and load balances to containers |
 | container runtime | Worker Node | Pulls images from container registry, starts and stops containers, managed container resources |
+
+* The **control loop** is responsible for observing the state of the cluster and matching the desired state
+  - (1) observe -> (2) check differences -> (3) take action -> (1) ...
+  - E.g., if a replica dies and the cluster has 3 replicas when it should have 4, the control loop creates another replica
+
+## Basics
 
 ### Clusters
 
@@ -80,6 +86,42 @@
 * By default, the maximum number of Pods that can be unavailable during the update and the maximum number of new Pods that can be created, is one
   - Both options can be configured to either numbers or percentages (of Pods)
 * If a Deployment is exposed publicly, the Service will load-balance the traffic only to available Pods during the update
+
+## Intermediate
+
+### Custom Resource Definitions (CRD)
+
+* Custom Resource Definition **Manifest**:
+  - Think of it like JSON Schema
+  - format:
+    ```yaml
+    apiVersion: apiextensions.k8s.io/v1
+    kind: CustomerResourceDefinition
+    metadata:
+      ...
+    spec:
+      ...
+    ```
+  - `scope` is `Namespaced` if belong to a namespace (e.g., pods, deployments) or `Cluster` if cluster-wide
+  - To deploy and manage using kubectl:
+    ```bash
+    > kubectl apply -f my-crds/foo-crd.yaml
+    > kubectl get crds 
+    NAME                CREATED AT
+    foo.example.com     2024-05-12T00:00:00Z
+    ```
+
+### Operators
+
+* **Operators** are primarily for managing stateful applications (e.g., web apps with databases)
+  - While stateless applications are simple, stateful applications are more complicated and may require manual intervention if not using operators (e.g., order of destroying matters, setup, etc)
+  - Kubernetes operators replace human operators, and it knows how to automatically deploy, recover, etc
+
+* Operators make use of CRDs
+
+* [OperatorHub.io](https://operatorhub.io/): for Kubernetes community to share operators
+
+* Operator SDK
 
 ## Commands
 
