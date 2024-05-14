@@ -24,11 +24,18 @@
 | kube-proxy | Worker Node | Networking proxy that routes traffic and load balances to containers |
 | container runtime | Worker Node | Pulls images from container registry, starts and stops containers, managed container resources |
 
+## Basics
+
+### Key Concepts
+
+* **Namespace** are used to name and isolate resources with a Kubernetes clusters
+  - Kubernetes provides a default namespace called `default`
+
 * The **control loop** is responsible for observing the state of the cluster and matching the desired state
   - (1) observe -> (2) check differences -> (3) take action -> (1) ...
+  - **Reconciling**: the process of applying changes in the control loop
+  - **Controllers** (managed by the **Controller Manager**) are responsible for managing resources as part of the control loop
   - E.g., if a replica dies and the cluster has 3 replicas when it should have 4, the control loop creates another replica
-
-## Basics
 
 ### Clusters
 
@@ -111,17 +118,32 @@
     foo.example.com     2024-05-12T00:00:00Z
     ```
 
+* Sample CRD:
+  ```yaml
+  apiVersion: "drupal.example.com/v1"
+  kind: Drupal
+  metadata:
+    name: my-website
+  spec:
+    databaseEngine: ...
+    version: ...
+  ```
+
 ### Operators
 
 * **Operators** are primarily for managing stateful applications (e.g., web apps with databases)
+  - Operators are a special type of controller
   - While stateless applications are simple, stateful applications are more complicated and may require manual intervention if not using operators (e.g., order of destroying matters, setup, etc)
   - Kubernetes operators replace human operators, and it knows how to automatically deploy, recover, etc
 
 * Operators make use of CRDs
 
-* [OperatorHub.io](https://operatorhub.io/): for Kubernetes community to share operators
+* [OperatorHub.io](https://operatorhub.io/): for Kubernetes community to share operators, though very far from complete
 
-* Operator SDK
+* Different ways to build operators:
+  1. In-depth knowledge of Go and Kubernetes API
+  2. Kubebuilder 
+  3. Operator SDK: supports non-Go -based custom operators
 
 ## Commands
 
