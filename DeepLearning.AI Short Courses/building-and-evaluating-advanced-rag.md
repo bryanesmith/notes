@@ -47,7 +47,7 @@ Taught by: Jerry Liu (**LlamaIndex**) and Anupam Datta (**Truera**)
     - `VectorStoreIndex#from_documents` does chunking, embedding, and indexing all at once
     - `VectorStoreIndex.as_query_engine` provides a query engine
 
-* The RAG triad, along with three evaluation metrics:
+* The **RAG triad**, along with three evaluation metrics:
     ![Diagram of RAG triad](./images/building-and-evaluating-advanced-rag.rag-triad.png)
 
 * Note that our initial simple RAG had decently high groundedness (0.8) and answer relevance (0.93), but poor context relevance (0.26). We'll use more advanced techniques to see if we can get better results.
@@ -84,6 +84,44 @@ Taught by: Jerry Liu (**LlamaIndex**) and Anupam Datta (**Truera**)
 | Auto-merging Query Engine | 1.00 | 0.94 | 0.44 | 0.0008 |
 
 ## Section 2: RAG Triad of metrics
+
+* Using `trulens_eval` package
+
+* RAG triad:
+    1. **Answer Relevance**: is the final response useful?
+    2. **Context Relevance**: how relevant is the content retrieved from the vector database?
+    3. **Groundedness**: is the response supported by the context
+
+* A **feedback function** provides a score (0-1.0) after reviewing an LLM's input, outputs, and intermediate response
+
+* Using "Relevance (or groundedness) with chain-of-thought reasoning" to get an explaination from feedback function
+
+* General process to evaluate and iterate on RAGs:
+    1. Start with LlamaIndex basic RAG
+    2. Evaluate with TruLens RAG Triad
+        - Failure modes related to context size (too small)
+    3. Iterate with LlamaIndex sentence window RAG
+    4. Re-evaluate with TruLens RAG Triad
+        - Do we see improvements in Context Relevance?
+        - What about other metrics
+    5. Experiment with different window sizes
+        - What window size results in the best eval metrics?
+        - Too small: insufficient context
+        - Too big: irrelevant context
+
+![Overview of different LLM evaluation options like manual options, LLMs, MLMs etc, comparing in scalability and meaningfulness](images/building-and-evaluating-advanced-rag.different-eval-options.png)
+
+* Options for evaluations
+    - **Ground Truth Evals**: scored by human experts
+    - **Human Evals**: similar to "Ground Truth Evals", but users not necessarily experts (so degree of confidence is lower)
+
+* In general human evals agree ~80% of time, and LLMs agree with human evals ~80% of time; suggesting LLM evals and human evals have comparable meaningfulness
+
+* Other types of evaluation supported by TruLens:
+    ![Summary of other types of evaluation supported by TruLens](images/building-and-evaluating-advanced-rag.other-truval-evaluations)
+
+* TrueLens supports a DataFrame-based leaderboard as well as a web-based dashboard:
+    ![Screenshot of notebook showing an example leaderboard and an example dashboard](images/building-and-evaluating-advanced-rag.truelens-leaderboard-dashboards.png)
 
 ## Section 3: Sentence-window retrieval
 
