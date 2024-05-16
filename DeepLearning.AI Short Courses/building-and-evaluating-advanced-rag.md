@@ -118,7 +118,7 @@ Taught by: Jerry Liu (**LlamaIndex**) and Anupam Datta (**Truera**)
 * In general human evals agree ~80% of time, and LLMs agree with human evals ~80% of time; suggesting LLM evals and human evals have comparable meaningfulness
 
 * Other types of evaluation supported by TruLens:
-    ![Summary of other types of evaluation supported by TruLens](images/building-and-evaluating-advanced-rag.other-truval-evaluations)
+    ![Summary of other types of evaluation supported by TruLens](images/building-and-evaluating-advanced-rag.other-truval-evaluations.png)
 
 * TrueLens supports a DataFrame-based leaderboard as well as a web-based dashboard:
     ![Screenshot of notebook showing an example leaderboard and an example dashboard](images/building-and-evaluating-advanced-rag.truelens-leaderboard-dashboards.png)
