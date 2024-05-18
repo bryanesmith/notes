@@ -48,7 +48,7 @@ Taught by: Jerry Liu (**LlamaIndex**) and Anupam Datta (**Truera**)
     - `VectorStoreIndex.as_query_engine` provides a query engine
 
 * The **RAG triad**, along with three evaluation metrics:
-    ![Diagram of RAG triad](./images/building-and-evaluating-advanced-rag.rag-triad.png)
+    ![Diagram of RAG triad](./images/building-and-evaluating-advanced-rag/rag-triad.png)
 
 * Note that our initial simple RAG had decently high groundedness (0.8) and answer relevance (0.93), but poor context relevance (0.26). We'll use more advanced techniques to see if we can get better results.
 
@@ -109,7 +109,7 @@ Taught by: Jerry Liu (**LlamaIndex**) and Anupam Datta (**Truera**)
         - Too small: insufficient context
         - Too big: irrelevant context
 
-![Overview of different LLM evaluation options like manual options, LLMs, MLMs etc, comparing in scalability and meaningfulness](images/building-and-evaluating-advanced-rag.different-eval-options.png)
+![Overview of different LLM evaluation options like manual options, LLMs, MLMs etc, comparing in scalability and meaningfulness](images/building-and-evaluating-advanced-rag/different-eval-options.png)
 
 * Options for evaluations
     - **Ground Truth Evals**: scored by human experts
@@ -118,12 +118,103 @@ Taught by: Jerry Liu (**LlamaIndex**) and Anupam Datta (**Truera**)
 * In general human evals agree ~80% of time, and LLMs agree with human evals ~80% of time; suggesting LLM evals and human evals have comparable meaningfulness
 
 * Other types of evaluation supported by TruLens:
-    ![Summary of other types of evaluation supported by TruLens](images/building-and-evaluating-advanced-rag.other-truval-evaluations.png)
+    ![Summary of other types of evaluation supported by TruLens](images/building-and-evaluating-advanced-rag/other-truval-evaluations.png)
 
 * TrueLens supports a DataFrame-based leaderboard as well as a web-based dashboard:
-    ![Screenshot of notebook showing an example leaderboard and an example dashboard](images/building-and-evaluating-advanced-rag.truelens-leaderboard-dashboards.png)
+    ![Screenshot of notebook showing an example leaderboard and an example dashboard](images/building-and-evaluating-advanced-rag/truelens-leaderboard-dashboards.png)
 
 ## Section 3: Sentence-window retrieval
+
+* Variables:
+    - `window size`: number of sentences to provide. (E.g., 3 would provide 1 sentence before and 1 sentence after)
+
+* Sentence-window RAG pipeline:
+    ![diagram of sentence-window RAG pipeline](images/building-and-evaluating-advanced-rag/sentence-window-retrieval-pipeline.png)
+
+* Key components of Sentence-window RAG pipeline:
+    * `Document`
+    * `SentenceWindowNodeParser`: parses document by sentences, and provides a configurable window of n sentences as metadata
+    * `ServiceContext` loads LLM, embedding model, and the node parser
+    * `VectorStoreIndex.from_documents`
+    * `MetadataReplacementPostProcessor`: places node with metadata (in our case, the sentence window)
+    * `SentenceTransformerRerank`: reorders retrieved nodes based on relevance as determined by a specialized model
+
+```py
+import os
+from llama_index import ServiceContext, VectorStoreIndex, StorageContext
+from llama_index.node_parser import SentenceWindowNodeParser
+from llama_index.indices.postprocessor import MetadataReplacementPostProcessor
+from llama_index.indices.postprocessor import SentenceTransformerRerank
+from llama_index import load_index_from_storage
+
+
+def build_sentence_window_index(
+    documents,
+    llm,
+    embed_model="local:BAAI/bge-small-en-v1.5",
+    sentence_window_size=3,
+    save_dir="sentence_index",
+):
+    # create the sentence window node parser w/ default settings
+    node_parser = SentenceWindowNodeParser.from_defaults(
+        window_size=sentence_window_size,
+        window_metadata_key="window",
+        original_text_metadata_key="original_text",
+    )
+    sentence_context = ServiceContext.from_defaults(
+        llm=llm,
+        embed_model=embed_model,
+        node_parser=node_parser,
+    )
+    if not os.path.exists(save_dir):
+        sentence_index = VectorStoreIndex.from_documents(
+            documents, service_context=sentence_context
+        )
+        sentence_index.storage_context.persist(persist_dir=save_dir)
+    else:
+        sentence_index = load_index_from_storage(
+            StorageContext.from_defaults(persist_dir=save_dir),
+            service_context=sentence_context,
+        )
+
+    return sentence_index
+
+
+def get_sentence_window_query_engine(
+    sentence_index, similarity_top_k=6, rerank_top_n=2
+):
+    # define postprocessors
+    postproc = MetadataReplacementPostProcessor(target_metadata_key="window")
+    rerank = SentenceTransformerRerank(
+        top_n=rerank_top_n, model="BAAI/bge-reranker-base"
+    )
+
+    sentence_window_engine = sentence_index.as_query_engine(
+        similarity_top_k=similarity_top_k, node_postprocessors=[postproc, rerank]
+    )
+    return sentence_window_engine
+
+from llama_index.llms import OpenAI
+
+index = build_sentence_window_index(
+    [document],
+    llm=OpenAI(model="gpt-3.5-turbo", temperature=0.1),
+    save_dir="./sentence_index",
+)
+
+sentence_window_engine = get_sentence_window_query_engine(index, similarity_top_k=6)
+
+response = sentence_window_engine.query(
+    "What are the keys to building a career in AI?"
+)
+```
+
+* Tradeoffs when adjust sentence window size:
+    1. Token usage/cost vs context relevance
+    2. Larger window size vs. groundedness
+    - Not that while context relevance and groundness are generally correlated at smaller window sizes (e.g., both low or high), as the window size gets higher the context relevance can stay high while the groundness decreases, as the LLM is overwhelmed by context, leading it to fall back on its pre-existing knowledge from its training
+
+* Gradually increasing sentence window starting with 1, and tracking experiments to pick the best sentence window size
 
 ## Section 4: Auto-merging retrieval
 
