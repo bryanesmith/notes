@@ -5,7 +5,7 @@
 * RAG used to overcome inability of LLMs to consider recent or proprietary data without retraining
 * Vector databases proceed LLMs, long used for semantic search and recommendation systems
 
-## How to Obtain Vector Representations of Data
+## 1. How to Obtain Vector Representations of Data
 
 * **Autoencorder**: used to encode inputs (e.g., Mnist handwritten digits) into embeddings
     ![Architecture of an autoencoder](images/vector-databases-from-embeddings-to-applications/autoencoder-architecture.png)
@@ -23,15 +23,15 @@
 
 * Dot product and cosine distance are commonly used in NLP (i.e., with sentence embeddings)
 
-## Search for Similar Vectors
+## 2. Search for Similar Vectors
 
-## Approximate Nearest Neighbors
+## 3. Approximate Nearest Neighbors
 
-## Vector Databases
+## 4. Vector Databases
 
-## Sparse, Dense, and Hybrid Search
+## 5. Sparse, Dense, and Hybrid Search
 
-## Application - Multilingual Search
+## 6. Application - Multilingual Search
 
 ## Conclusion 
 
