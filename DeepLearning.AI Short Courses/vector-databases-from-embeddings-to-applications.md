@@ -25,7 +25,24 @@
 
 ## 2. Search for Similar Vectors
 
+* **Semantic search**: looking for embeddings that are similar
+
+* **K Nearest Neighbors** (KNN) is a brute force method for semantic search, and comes with a large computational cost
+    - `sklearn.neighbors.NearestNeighbors`
+    - KNN doesn't scale; runtimes are hyperlinear (exponential?) for number of embeddings and dimensions
+
 ## 3. Approximate Nearest Neighbors
+
+* **Navigable Small World** (NSW) connect each node (say, 2) to nearest nodes to create a graph; and then given a query node, pick a random node in graph, and iteratively navigate to next closest node
+
+* **Hierarchical Navigable Small World** (HNSW) is similar to NSW, but assigns nodes to layers and iteratively works way down layers
+    - Lower probability of a node being assigned to higher layers
+    - Query time increases logarithmically with number of nodes
+
+* `networkx` library for creating Graphs
+
+* `weaviate`: open source vector database
+    - embedded option for running inside notebook
 
 ## 4. Vector Databases
 
