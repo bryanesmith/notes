@@ -41,10 +41,45 @@
 
 * `networkx` library for creating Graphs
 
-* `weaviate`: open source vector database
+* Weaviate (`weaviate`): open source vector database
     - embedded option for running inside notebook
 
 ## 4. Vector Databases
+
+* Jeopardy Tiny: `https://raw.githubusercontent.com/weaviate-tutorials/quickstart/main/data/jeopardy_tiny.json`
+
+* Weaviate can handle vectorization automatically, with multiple choices for **vectorizer** (e.g., `text2vec-cohere`, `text2vec-openai`, etc)
+    - E.g., importing Jeopardy Tiny without explicitly vectorizing:
+        ```py
+        with client.batch.configure(batch_size=5) as batch:
+            for i, d in enumerate(data):  # Batch import data
+                
+                print(f"importing question: {i+1}")
+                
+                properties = {
+                    "answer": d["Answer"],
+                    "question": d["Question"],
+                    "category": d["Category"],
+                }
+                
+                batch.add_data_object(
+                    data_object=properties,
+                    class_name="Question"
+                )
+        ```
+* Sample semantic search:
+    ```py
+    response = (
+        client.query
+        .get("Question",["question","answer","category"])
+        .with_near_text({"concepts": "biology"})
+        .with_additional(['vector','distance'])
+        .with_limit(2)
+        .do()
+    )
+    ```
+
+* Weaviate supports CRUD operations
 
 ## 5. Sparse, Dense, and Hybrid Search
 
