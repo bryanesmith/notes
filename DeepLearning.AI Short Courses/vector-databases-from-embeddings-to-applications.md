@@ -103,7 +103,14 @@
 
 ## 6. Application - Multilingual Search
 
+* Since embeddings produce vectors conveying meaning, similar embeddings in different languages have similar embedding values
+    - E.g., if I search for the equivalent phrase in Polish or Arabic instead of English, results will be same (or very similar)
 
+* RAGs:
+    1. Query vector database and retrieve relevant documents 
+    2. Prompt LLM with context
+
+* Using `with_generate` Weaviate method to create a basic RAG pipeline
 
 ## Conclusion 
 
