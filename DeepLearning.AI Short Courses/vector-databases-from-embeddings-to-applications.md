@@ -83,7 +83,27 @@
 
 ## 5. Sparse, Dense, and Hybrid Search
 
+* **Dense Search**: uses vector embedding representation of data to perform search
+    - Challenges: 
+        1. doesn't work well with out-of-domain data (e.g., asking doctor how to fix a car)
+        2. Doesn't work well with seamingly random data (e.g., serial numbers)
+
+
+* **Sparse Search**: keyword matching. (E.g., **Bag of Words**, **Best Matching 25** aka BM25)
+    - Called "sparse" because works with sparse areas (mostly 0s)
+
+* **Hybrid Search**: rerank results based on combined results of both dense and sparch searches
+    - Tunable via `alpha` parameter between 0 (pure keyword search) - 1 (pure vector search)
+
+| Search type | Weaviate client method |
+| ----------- | ---------------------- |
+| Dense search | `with_near_text` |
+| Sparse search | `with_bm25` |
+| Hybrid search | `with_hybrid` |
+
 ## 6. Application - Multilingual Search
+
+
 
 ## Conclusion 
 
