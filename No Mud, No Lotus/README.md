@@ -36,6 +36,35 @@ By Thich Nhat Hahn
 
 ## 2. Saying Hello
 
+* We consume (e.g., junk food, computer games) to cover up our suffering, creating addictions without addressing the root issue. (22)
+* Consuming to cover suffering doesn't work; need to look deeply into suffering to get insight into it and make a breakthrough. (23)
+
+### Stopping and acknowledging suffering
+
+* When suffering arises, the first thing to do is stop, follow our breathing, and acknowledge it: (23)
+    ```
+    Breathing in, I know suffering is there.
+    Breathing out, I say hello to my suffering.
+    ```
+* A few breaths taken with full attention can pause regret and sorrow about the past as well as uncertainty and fear about the future. (23)
+
+### Body and mind together
+
+* Very often, our minds are in the past, future, or projects; mindful breathing reunites the mind and body. (24)
+* When the mind reunites with the body, the mental discourse stops its chattering. (24)
+
+### The pull of distractions
+
+### Embracing suffering
+
+* Suffering can overwhelm our mind; so we invite the energy of mindfulness at the same time. (26)
+* Don't fight or suppress suffering; cradle it. Mindfulness is like a mother, suffering is like a crying baby; the mother recognizes and embraces the baby without judgment. (27)
+* Depression is one of the most widespread forms of depression. (27)
+
+### The bell
+
+* A bell of mindfulness is a reminder to come back to ourselves, to come back to life here in the present moment. (28)
+
 ## 3. Looking Deeply
 
 ## 4. Ease
