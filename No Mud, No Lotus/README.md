@@ -119,6 +119,24 @@ By Thich Nhat Hahn
 
 ## 4. Ease
 
+* If we know how to handle the little sufferings (e.g., worrying about how others think about us, missing a promotion, making a faux pas), we can save our energy to embrace and soothe the true pains of illness and loss that are unavoidable. (46)
+
+### Releasing the arrow
+
+* Being anxious, judgmental, fearful, or angry about an unwelcome event (e.g., losing a valuable object) is like being hit by a second arrow, magnifying our suffering. (46)
+
+* Part of the art of suffering well is learning not to magnify our pain by getting carried away in fear, anger, and despair. (47)
+
+* Remember that everthing is impermanent, including suffering. (47)
+
+### Complexes and the sense of a separate self
+
+* A basic problem that causes us to suffer is the idea that we are a separate self, leading us to compare ourselves to others. (48)
+
+### Greener grass: the story of the Buddha and Mara
+
+* In Buddhist stories, **Mara** is the personlification of all depravity and delusion, and everything that makes us suffer in life.
+
 ## 5. Five Practices for Nurturing Happiness
 
 ## 6. Happiness Is Not an Individual Matter
