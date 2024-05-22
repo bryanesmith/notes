@@ -67,6 +67,56 @@ By Thich Nhat Hahn
 
 ## 3. Looking Deeply
 
+### Understanding the pain
+
+* Once mindful energy soothed our suffering, we can begin to look more deeply into its nature and sources. (32)
+
+* A human being without understanding is a human being without compassion, utterly alone, cut off, and isolated. (32)
+
+### The pain of our ancestors
+
+* Our suffering is not just our's; it belongs to our ancestors as well. (33-4)
+
+* You may be angry at your parents, and want to cut them off; but your parents are in your cells, and by being angry with them you are angry at yourself. You cannot cut them off; it is better to look deeply and transform and heal the suffering and stop the intergenerational cycle of suffering. (34)
+
+### Exploring our fear
+
+* So many of us walk around with the pain and agitation of useless fear, including the fear of dying, hunger, loss, etc. (34-5)
+
+* If you are afraid of dying, know that you are dying right now; dying and living inter-are. Everything dies and renews itself all the time. (35)
+
+### Your true aspiration
+
+* When we are full of fear, we are often completely focused on preventing the event we dread, and we forget that joy is also possible even in an unpredictable world. (36)
+
+* People are victims of their success, becoming trapped in their next set of goals; but no one is ever a victim of happiness. (36)
+
+* Most of us postpone happiness, and struggle now so that we will be happy in the future, as if we don't yet meet the conditions to be happy. (36)
+
+* The habit of running into the future creates tension, both in the body and the mind; it's a major source of our suffering. (37)
+
+* Instead of barreling ahead in our ambitions, we need to take the time to stop, come home to ourselve, look deeply, and discover what brings our deepest happiness. (37)
+
+### Developing understanding and compassion 🌟
+
+* The roots of our suffering are deep and connected with the roots of the suffering of others. Understanding our own hurt allows us to see and understand the suffering of others. (38)
+
+* When you are angry with others, you may not believe they have any reason to be unhappy; but if you look deeply, you will see the suffering in them. What they need is help, not punishment. In this way, you can transform the suffering of anger into the flower of compassion. (38)
+
+* Our suffering overflows out onto the people around us - especially to the closest people we love the most. (39)
+
+* A world without suffering would be a world without compassion and understanding. (37)
+
+### Easing communication
+
+* It's no wonder we have difficulty understanding others, as we have a hard time understanding the conflicts and tensions in ourselves, and others have the same difficulties with themselves. (40)
+
+* We need help, others need help. We are all suffering. No one needs punishment, and punshing another won't improve anyone's situation. (40)
+
+* Compassionate istening is a good way to give the other person the chance to speak and suffer less. What they say may be full of bitterness and wrong perception, but do not interrupt or correct; hold onto your true purpose, to listen and allow them to speak. (40-1)
+
+### Being a mindfulness bell for a loved one
+
 ## 4. Ease
 
 ## 5. Five Practices for Nurturing Happiness
