@@ -139,4 +139,78 @@ By Thich Nhat Hahn
 
 ## 5. Five Practices for Nurturing Happiness
 
+* We don't have to wait for the end of all suffering to be happy; happiness is availble to use right now. (56)
+
+* Our definition of "happiness" may be preventing us from experiencing happiness. (56)
+
+### The difference between joy and happiness
+
+* "Joy" and "happiness" are different; joy contains an element of excitment. If you are dying of thirst in the dessert and see an oasis with fresh water, joy is this discovery; happiness is the first drink of water. (56)
+
+### Why the Buddha kept meditating
+
+* Everything is impermanent, including happiness. To continue to be happy, you must feed it; which is why we continue to meditate. (57)
+
+### The first practice: letting go
+
+* Many of the things we think we need to be happy are really obstacles for our joy and happiness. (57)
+
+* When you have the courage to let go of things preventing your happiness (e.g., a relationship, a career), happiness comes very quickly without searching for it. (58)
+
+### Releasing your cows
+
+* The story of the miserable farmer who lost his cows and crops, and the happy monks who had nothing to lose. (58-60)
+
+* Exercise: take a piece of paper and write down the names of your cows, the things you think of as crucial for your well-being. This week, try releasing one or two. See if you can release any over the next year. (60)
+
+### The story of Badhiya
+
+### The second practice: inviting positive seeds
+
+* The seeds of our unconscious that we water sprout, come up into our awareness, and manifest outwardly. (62)
+
+* Instead of fighting your arogance, nurture its opposite seed, compassion; as the seed of compassion becomes strong through mindfulness, arrogance will go down without fighting it or pushing it. (62)
+
+* Water the good seeds and refrain from watering the negative seeds. (62)
+
+### The third practice: mindfulness-based joy
+
+* You can generate mindful energy all day - while washing dishes, cooking dinner, mopping the floor. (63)
+
+* With mindfulness, you can touch the many conditions of happiness and joy that are already available. (63)
+
+### Enjoying sitting
+
+* Sitting can be very healing, very profitable in its own way. (64)
+
+### Enjoying our steps
+
+* There are so many wonders of life around us and inside us that we're unable to be in touch with because we're always in a hurry. (64)
+
+* There's no point in doing sitting or walking meditation unless you enjoy it; it would be a waste of time. (63, 64)
+
+* Many of us have found success - we have enough money, we have a spouse and family - yet we're not happy. Perhaps its because we aren't practicing mindfulness that helps us recognize the many conditions of happiness that are already there. (65)
+
+### Morning verse for happiness
+
+* Waking up and breath, and become aware that you have twenty-four brand-new hours to live. This is the gift of life. (66)
+
+### Creating happiness
+
+* If you write down all the conditions for happiness available to you now (e.g., the ability to walk, to see the sky, to smell a flower, enjoy a breath), four pages may not be enough. When we can recognize all these elements, it's so easy to generate happiness. (68)
+
+### The fourth practice: concentration
+
+* Concentration has the power to break through and burn away the afflictions that make you suffer. (68)
+
+* When we have concentration, we have a lot of energy. We won't get carried away by visions of past suffering or fears about the future. (68)
+
+### The fifth practice: insight
+
+* Insight brings us clarity that can liberate us from afflictions such as jealousy and anger, and allow true happiness to come. (69)
+
+* Consciously call up our challenges of the past (e.g., allergies in spring) to help ourselves treasure the good things we are having right now (e.g., clear air in the winter). (70)
+
+* Don't get caught up in previous suffering, but say to ourselves, "How lucky I am right now. I am not in that situation." That is insight. (70)
+
 ## 6. Happiness Is Not an Individual Matter
