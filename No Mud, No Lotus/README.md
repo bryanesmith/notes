@@ -251,6 +251,17 @@ By Thich Nhat Hahn
 
 ### 1. The Sixteen Breathing Exercises
 
+* The mind is made up of particles called **mental formations** (84)
+
+* Joy and happiness are similar; joy has an element of excitement, whereas happiness has an element of ease (88-9)
+
+| Set    | Exercises | Interpretation |
+| ------ | --------- | -------------- |
+| first  | <ol><li>Breathing in,<br> I am aware of my in-breath.<br> Breathing out,<br> I am aware of my out breath.</li><li></li><li></li><li></li></ol> | <ul><li></li></ul> |
+| second | <ol><li></li><li></li><li></li><li></li></ol> | <ul><li></li></ul> |
+| third  | <ol><li></li><li></li><li></li><li></li></ol> | <ul><li></li></ul> |
+| fourth | <ol><li></li><li></li><li></li><li></li></ol> | <ul><li></li></ul> |
+
 ### 2. The Six Mantras
 
 ### 3. Being Present with Strong Emotions
