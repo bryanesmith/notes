@@ -5,4 +5,4 @@
 ## Section notes
 
 * [Section 1: Dive Into Docker!](sections/section-01.md)
-* [Section 2: Manipulating Containers with the Docker Client](sections/section-01.md)
+* [Section 2: Manipulating Containers with the Docker Client](sections/section-02.md)
