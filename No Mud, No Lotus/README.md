@@ -257,7 +257,7 @@ By Thich Nhat Hahn
 
 | Set    | Exercises | Interpretation |
 | ------ | --------- | -------------- |
-| first  | <ol><li>Breathing in,<br> I am aware of my in-breath.<br> Breathing out,<br> I am aware of my out breath.</li><li></li><li></li><li></li></ol> | <ul><li></li></ul> |
+| first  | <ol><li>Breathing in,<br> I am aware of my in-breath.<br> Breathing out,<br> I am aware of my out breath.</li><li>Breathing in, I follow my<br> in-breath all the way through.<br> Breathing out, I follow my<br> out-breath all the way through.</li><li>Breathing in, I am aware of my<br> whole body. Breathing out, I am aware of my<br> whole body.</li><li>Breathing in,<br> I calm my body.<br> Breathing out,<br> I calm my body.</li></ol> | - |
 | second | <ol><li></li><li></li><li></li><li></li></ol> | <ul><li></li></ul> |
 | third  | <ol><li></li><li></li><li></li><li></li></ol> | <ul><li></li></ul> |
 | fourth | <ol><li></li><li></li><li></li><li></li></ol> | <ul><li></li></ul> |
