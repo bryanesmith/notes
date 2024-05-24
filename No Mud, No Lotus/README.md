@@ -2,7 +2,7 @@
 
 By Thich Nhat Hahn
 
-## Contents
+## Part 1: Contents
 
 ### 1. The Art of Transforming Suffering
 
@@ -247,7 +247,7 @@ By Thich Nhat Hahn
 
 * The essence of our practice can be described as transforming suffering into happiness. (81)
 
-## Practices for Happiness
+## Part 2: Practices for Happiness
 
 ### 1. The Sixteen Breathing Exercises
 
