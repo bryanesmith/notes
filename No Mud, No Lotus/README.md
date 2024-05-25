@@ -255,7 +255,7 @@ By Thich Nhat Hahn
 
 * Joy and happiness are similar; joy has an element of excitement, whereas happiness has an element of ease (88-9)
 
-| Set    | <div style="width:525px">Exercises</div> | Interpretation |
+| Set    | Exercises<img width="525"/> | Interpretation |
 | ------ | --------- | -------------- |
 | 1st  | <ol><li>Breathing in, I am aware of my in-breath.<br> Breathing out, I am aware of my out breath.</li><li>Breathing in, I follow my in-breath all the way through.<br> Breathing out, I follow my out-breath all the way through.</li><li>Breathing in, I am aware of my whole body.<br> Breathing out, I am aware of my whole body.</li><li>Breathing in, I calm my body.<br> Breathing out, I calm my body.</li></ol> | - |
 | 2nd | <ol><li>Breathing in, I feel joy.<br> Breathing out, I feel joy.</li><li>Breathing in, I feel happy.<br> Breathing out, I feel happy.</li><li>Breathing in, I am aware of a painful feeling.<br> Breakthing out, I am aware of a painful feeling.</li><li>Breathing in, I calm my painful feeling.<br> Breathing out, I calm my painful feeling.</li></ol> | - |
