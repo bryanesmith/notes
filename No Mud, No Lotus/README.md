@@ -257,7 +257,7 @@ By Thich Nhat Hahn
 
 | Set    | Exercises | Interpretation |
 | ------ | --------- | -------------- |
-| first  | <ol><li>Breathing in,<br> I am aware of my in-breath.<br> Breathing out,<br> I am aware of my out breath.</li><li>Breathing in, I follow my<br> in-breath all the way through.<br> Breathing out, I follow my<br> out-breath all the way through.</li><li>Breathing in, I am aware of my<br> whole body. Breathing out, I am aware of my<br> whole body.</li><li>Breathing in,<br> I calm my body.<br> Breathing out,<br> I calm my body.</li></ol> | - |
+| first  | <ol><li>Breathing in, I am aware of my in-breath.<br> Breathing out, I am aware of my out breath.</li><li>Breathing in, I follow my in-breath all the way through.<br> Breathing out, I follow my out-breath all the way through.</li><li>Breathing in, I am aware of my whole body. Breathing out, I am aware of my whole body.</li><li>Breathing in, I calm my body.<br> Breathing out, I calm my body.</li></ol> | - |
 | second | <ol><li>Breathing in, I feel joy.<br> Breathing out, I feel joy.</li><li>Breathing in, I feel happy.<br> Breathing out, I feel happy.</li><li>Breathing in, I am aware of a painful feeling.<br> Breakthing out, I am aware of a painful feeling.</li><li>Breathing in, I calm my painful feeling.<br> Breathing out, I calm my painful feeling.</li></ol> | - |
 | third  | <ol><li></li><li></li><li></li><li></li></ol> | <ul><li></li></ul> |
 | fourth | <ol><li></li><li></li><li></li><li></li></ol> | <ul><li></li></ul> |
