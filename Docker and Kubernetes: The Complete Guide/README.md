@@ -9,7 +9,7 @@
 * [Section 3: Building Customer Images Through Docker Server](sections/section-03.md)
 * [Section 4: Making Real Projects with Docker](sections/section-04.md)
 
-### Projects
+## Projects
 
 | Project | Section(s) | Description |
 | ------- | ---------- | ----------- |
