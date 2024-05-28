@@ -9,6 +9,7 @@
 * [Section 3: Building Customer Images Through Docker Server](sections/section-03.md)
 * [Section 4: Making Real Projects with Docker](sections/section-04.md)
 * [Section 5: Docker Compose with Multiple Local Containers](sections/section-05.md)
+* [Section 6: Creating a Production-Grade Workflow](sections/section-06.md)
 
 ## Projects
 
