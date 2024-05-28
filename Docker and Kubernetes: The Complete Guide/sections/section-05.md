@@ -17,7 +17,7 @@
 - Useful Docker Compose commands:
     ```sh
     % docker-compose up
-    % docker-compose up —build
+    % docker-compose up --build
     % docker-compose up -d # background
     % docker-compose down
     % docker-compose ps

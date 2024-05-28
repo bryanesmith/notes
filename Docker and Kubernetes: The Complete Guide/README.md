@@ -17,3 +17,4 @@
 | ------- | ---------- | ----------- |
 | `projects/redis-image` | 3 | Creating a Docker image for running redis-server |
 | `projects/simpleweb` | 4 | Node.js based web application |
+| `projects/visits` | 5 | Simple web app with a counter using Redis and separate webapp containers managed by Docker Compose |
