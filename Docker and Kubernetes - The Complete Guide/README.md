@@ -10,6 +10,7 @@
 * [Section 4: Making Real Projects with Docker](sections/section-04.md)
 * [Section 5: Docker Compose with Multiple Local Containers](sections/section-05.md)
 * [Section 6: Creating a Production-Grade Workflow](sections/section-06.md)
+* [Section 7: Continuous Integration and Deployment with AWS](sections/section-07.md)
 
 ## Projects
 
