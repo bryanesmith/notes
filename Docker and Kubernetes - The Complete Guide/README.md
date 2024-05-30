@@ -18,3 +18,4 @@
 | `projects/redis-image` | 3 | Creating a Docker image for running redis-server |
 | `projects/simpleweb` | 4 | Node.js based web application |
 | `projects/visits` | 5 | Simple web app with a counter using Redis and separate webapp containers managed by Docker Compose |
+| `projects/frontend` | 6 - 7 | Explore a workflow including nginx, TravisCI, and AWS Elastic Beanstalk. Includes: Docker Volumes, multi-stage builds |
