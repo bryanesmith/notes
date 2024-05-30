@@ -3,7 +3,7 @@
 - Our workflow: 
     1. Develop using a development container (using Docker volumes to enable live reload)
     2. Commit changes to feature branch
-    3. TravisCI 
+    3. Travis CI 
     4. `main` branch
     5. AWS Elastic Beanstalk 
 
