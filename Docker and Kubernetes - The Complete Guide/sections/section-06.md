@@ -111,7 +111,7 @@
     - Want to use different images for build vs deploy (e.g., `node:alpine` to use `npm build`, but `xxx` to run nginx)
     - Don't want to copy over development dependencies (bloat and security risks)
 
-* 
+* Using multi-stage builds to create an nginx image of our React app:
     ```DOCKERFILE
     # >>> STAGE 1: build <<<
     FROM node:16-alpine as builder
