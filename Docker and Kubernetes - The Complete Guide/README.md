@@ -21,3 +21,4 @@
 | `projects/simpleweb` | 4 | Node.js based web application |
 | `projects/visits` | 5 | Simple web app with a counter using Redis and separate webapp containers managed by Docker Compose |
 | [`docker-react` Repo](https://github.com/bryanesmith/docker-react) | 6 - 7 | Explore a workflow including nginx, Travis CI, and AWS Elastic Beanstalk. Includes: Docker Volumes, multi-stage builds |
+| `projects/complex` | 8 - 11 | Multi-container, web-based Fibonaci calculator using Nginx, React server, Express server, Postgres, Redis, and a worker node with Elastic Beanstalk, RDS, and ElastiCache |
