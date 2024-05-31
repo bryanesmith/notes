@@ -1,11 +1,13 @@
 # Section 6: Creating a Production-Grade Workflow
 
 - Our workflow: 
-    1. Develop using a development container (using Docker volumes to enable live reload)
+    1. Develop using a development container using `Dockerfile.dev` (using Docker volumes to enable live reload)
     2. Commit changes to feature branch
-    3. Travis CI 
-    4. `main` branch
-    5. AWS Elastic Beanstalk 
+    3. Travis CI:
+        1. Creates a development container using `Dockerfile.dev` (feature branch)
+        2. Runs tests
+        3. Builds production container using `Dockerfile` (main branch)
+        4. Deploys our production container to AWS Elastic Beanstalk 
 
 - Install Node v8.11.3
 
