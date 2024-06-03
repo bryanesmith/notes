@@ -280,8 +280,85 @@ Notes:
 
 ### 5. Metta
 
+* **Metta** (meaning "loving kindness" in Pali) meditation is a practice of cultivating understanding, love, and compassion. (104)
+
+* Once we love and take care of ourselves, we can be much more helpful to others. (104)
+
+```
+Part 1: 
+
+May I be peaceful, happy, and light in body and spirit.
+May he be peaceful, happy, and light in body and spirit.
+May she be peaceful, happy, and light in body and spirit.
+May they be peaceful, happy, and light in body and spirit.
+
+May I be safe and free from injury. 
+May he be safe and free from injury. 
+May she be safe and free from injury. 
+May they be safe and free from injury. 
+
+May I be free from anger, afflictions, fear, and anxiety.
+May she be free from anger, afflictions, fear, and anxiety.
+May he be free from anger, afflictions, fear, and anxiety.
+May theuy be free from anger, afflictions, fear, and anxiety.
+
+Part 2:
+
+May I learn to look at myself with the eyes of understanding and love.
+May I learn to look at her with the eyes of understanding and love.
+May I learn to look at him with the eyes of understanding and love.
+May I learn to look at them with the eyes of understanding and love.
+
+May I be able to recognize and touch the seeds of joy and happiness in myself.
+May I be able to recognize and touch the seeds of joy and happiness in her.
+May I be able to recognize and touch the seeds of joy and happiness in him.
+May I be able to recognize and touch the seeds of joy and happiness in them.
+
+May I learn to identify and see the sources of anger, craving, and delusion in myself.
+May I learn to identify and see the sources of anger, craving, and delusion in her.
+May I learn to identify and see the sources of anger, craving, and delusion in him.
+May I learn to identify and see the sources of anger, craving, and delusion in them.
+
+Part 3: 
+
+May I know how to nourish the seeds of joy in myself every day.
+May I know how to nourish the seeds of joy in her every day.
+May I know how to nourish the seeds of joy in him every day.
+May I know how to nourish the seeds of joy in them every day.
+
+May I be able to live fresh, solid, and free.
+May she be able to live fresh, solid, and free.
+May he be able to live fresh, solid, and free.
+May they be able to live fresh, solid, and free.
+
+May I be free from attachment and aversion, but not be indifferent.
+May she be free from attachment and aversion, but not be indifferent.
+May he be free from attachment and aversion, but not be indifferent.
+May they be free from attachment and aversion, but not be indifferent.
+```
+
+* Practice this first on yourself, then someone you like, someone neutral, then someone you don't like. (106)
+
+* According to Buddha, a human is mjade of **five elements**: form (body), feelings, perceptions, mental formations, and consciousness. Become a surveyor, and these elements are your territory. (106)
+
+* As long as we reject ourselves and continue to harm our own body and mind, there's no point in talking about loving and accepting others. (110)
+
+* Whenever we see or hear something, our attention can be appropriate or inappropriate. With mindfulness, we release inappropriate attention and nurture appropriate attention. (110)
+
+* When we believe that happiness should take a particular form, we fail to see the opportunities for joy that are right in front of us. (112)
+
+* Every day, review whether you took two or three steps in the direction you cherish. If you didn't, say to yourself "I'll do better tomorrow." (113)
+
+* The kind of love the Buddha wanted us to cultivate is not possessive or attached. (114)
+
 ### 6. Deep Relaxation
 
 ### 7. The Five Mindfulness Trainings
 
+* When anger is manifesting in me, I am determined not to speak. (119)
+
 ### 8. Walking Meditation
+
+* Peace is available only in the present moment. (121)
+
+* If you suffer from depression, your depression won’t be able to go away until you know how to stop. You’ve been running and not allowed yourself the time to rest, to relax, and to live your daily life deeply. (122-3)
