@@ -12,6 +12,8 @@
 * [Section 6: Creating a Production-Grade Workflow](sections/section-06.md)
 * [Section 7: Continuous Integration and Deployment with AWS](sections/section-07.md)
 * [Section 8: Building a Multi-Container Application](sections/section-08.md)
+* [Section 9: Dockerizing Multiple Services](sections/section-09.md)
+* [Section 10: A Continuous Integration Workflow for Multiple Images](sections/section-10.md)
 
 ## Projects
 
