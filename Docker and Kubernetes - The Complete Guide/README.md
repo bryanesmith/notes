@@ -14,6 +14,7 @@
 * [Section 8: Building a Multi-Container Application](sections/section-08.md)
 * [Section 9: Dockerizing Multiple Services](sections/section-09.md)
 * [Section 10: A Continuous Integration Workflow for Multiple Images](sections/section-10.md)
+* [Section 11: Multi-Container Deployments to AWS](sections/section-11.md)
 
 ## Projects
 
@@ -23,4 +24,4 @@
 | `projects/simpleweb` | 4 | Node.js based web application |
 | `projects/visits` | 5 | Simple web app with a counter using Redis and separate webapp containers managed by Docker Compose |
 | [`docker-react` Repo](https://github.com/bryanesmith/docker-react) | 6 - 7 | Explore a workflow including nginx, Travis CI, and AWS Elastic Beanstalk. Includes: Docker Volumes, multi-stage builds |
-| `projects/complex` | 8 - 11 | Multi-container, web-based Fibonaci calculator using Nginx, React server, Express server, Postgres, Redis, and a worker node with Elastic Beanstalk, RDS, and ElastiCache |
+| [`complex-docker` Repo](https://github.com/bryanesmith/complex-docker) | 8 - 11 | Multi-container, web-based Fibonaci calculator using Nginx, React server, Express server, Postgres, Redis, and a worker node with Elastic Beanstalk, RDS, and ElastiCache |
