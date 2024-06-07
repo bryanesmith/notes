@@ -96,6 +96,24 @@
 
 ## Intermediate
 
+### Amazon EKS 
+
+* Managed Kubernetes control plane, just attach your data plane
+
+* Native k8s, CNCF-compliant experience (e.g., Kinect)
+
+* Seamless experience with IAM, S3, CloudWatch, ALB Ingress Controller, AWS Certificate Manager, AWS Cognito, etc. eksctl create cluster. 
+
+* E.g., P3 for training and P2 for inference for batch workflow. 
+
+* Consider 1) Escalator horizontal auto scalar for batch jobs, 2) AWS Deep Learning Containers. AWS-optimized TensorFlow 
+
+* Creating k8s cluster via Kubeflow 
+
+* See MNIST Fashion example in [machine-learning/in-k8s GitHub repo](https://github.com/aws-samples/machine-learning-using-k8s)
+
+* Distributed training with Horovod 
+
 ### Custom Resource Definitions (CRD)
 
 * Custom Resource Definition **Manifest**:
@@ -129,6 +147,38 @@
     version: ...
   ```
 
+### Helm
+
+* Value of Helm: 
+  1. package manager for K8s
+  2. templating engine
+  3. release management. 
+
+* **Helm Charts**: bundles of YAML files available in public or private repository
+
+* **Helm Hub** 
+
+* Files:
+  - `Chart.yaml`
+  - `values.yaml`
+  - `charts/`
+  - `templates/`
+
+* Template values (`.Values` object) via (1) `values.yaml`, (2) `--values` flag, (3) `--set` flag
+
+* Templating useful for (1) CI/CD and (2) supporting multiple environments
+
+* `% helm install <chartname>`
+
+* **Tiller** server (running with K8s cluster), tracks revisions of charts, supporting upgrades and rollbacks. 
+  - Tiller security concerns (too many permissions), removed in Helm v3
+
+### Ingress
+
+- Ingress spec contains rules, which can make different path (or even hosts and subdomains) to different Services
+
+- Ingress Controller (E.g., nginx. AWS ABS) 
+
 ### Operators
 
 * **Operators** are primarily for managing stateful applications (e.g., web apps with databases)
@@ -144,6 +194,20 @@
   1. In-depth knowledge of Go and Kubernetes API
   2. Kubebuilder 
   3. Operator SDK: supports non-Go -based custom operators
+
+
+### StatefulSet 
+
+- StatefulSet vs Deployment
+  1. Sticky identity for each pod, and stateful names with ordinals. Created in order, deleted in reverse order
+  2. Best practice is to use Persistent Volumes with remote storage
+  3. Provides individual service DNS names, as well as overall service DNS name. 
+
+- Stateful applications not ideal for containers and hence often use managed services instead
+
+
+### Misc
+- `Secret` and `ConfigMap` components
 
 ## Commands
 
