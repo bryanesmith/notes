@@ -15,6 +15,7 @@
 * [Section 9: Dockerizing Multiple Services](sections/section-09.md)
 * [Section 10: A Continuous Integration Workflow for Multiple Images](sections/section-10.md)
 * [Section 11: Multi-Container Deployments to AWS](sections/section-11.md)
+* [Section 12: Onwards to Kubernetes!](sections/section-12.md)
 
 ## Projects
 
@@ -25,3 +26,4 @@
 | `projects/visits` | 5 | Simple web app with a counter using Redis and separate webapp containers managed by Docker Compose |
 | [`docker-react` Repo](https://github.com/bryanesmith/docker-react) | 6 - 7 | Explore a workflow including nginx, Travis CI, and AWS Elastic Beanstalk. Includes: Docker Volumes, multi-stage builds |
 | [`complex-docker` Repo](https://github.com/bryanesmith/complex-docker) | 8 - 11 | Multi-container, web-based Fibonaci calculator using Nginx, React server, Express server, Postgres, Redis, and a worker node with Elastic Beanstalk, RDS, and ElastiCache |
+| `projects/simplek8s` | 12 | Deploy a single pod and expose it locally using a service (`NodePort`) |
