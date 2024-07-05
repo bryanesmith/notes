@@ -27,3 +27,4 @@
 | [`docker-react` Repo](https://github.com/bryanesmith/docker-react) | 6 - 7 | Explore a workflow including nginx, Travis CI, and AWS Elastic Beanstalk. Includes: Docker Volumes, multi-stage builds |
 | [`complex-docker` Repo](https://github.com/bryanesmith/complex-docker) | 8 - 11 | Multi-container, web-based Fibonaci calculator using Nginx, React server, Express server, Postgres, Redis, and a worker node with Elastic Beanstalk, RDS, and ElastiCache |
 | `projects/simplek8s` | 12 | Deploy a single pod and expose it locally using a service (`NodePort`) |
+| [`complex-kubernetes` Repo](https://github.com/bryanesmith/complex-kubernetes) | 14-16 | Multi-container, web-based Fibonaci calculator using Kubernetes |
