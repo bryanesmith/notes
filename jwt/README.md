@@ -39,6 +39,7 @@ E.g.,
 Authorization tokens expire in minutes, often paired with refresh tokens
 
 Pros: 
+
     1. portable
     2. efficient (less chatty, e.g., less db calls)
     3. compact
@@ -48,10 +49,12 @@ Pros:
     7. JSON naturally maps to programming objects
 
 Cons:
+
     1. hard to revoke (e.g., log out, block or terminate account)
     2. can’t be too big (some servers have 8 KB header limits)
 
 Best Practices:
+
     1. use HTTPS to avoid MITM attacks
     2. always validate
     3. Use asymetric encryption (e.g., RSA)
@@ -60,6 +63,7 @@ Best Practices:
     6. use short-lived access tokens
 
 Alternatives:
+
     1. Sessions (e.g., login, server returns session ID as cookie)
     2. Simple Web Tokens (SWT, only symmetrically signed)
     3. SAML (XML, so verbose; compex)
