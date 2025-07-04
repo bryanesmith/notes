@@ -36,7 +36,7 @@ Pros: (1) longevity (solid-state devices with no moving parts), (2) handle signi
 
 # Transistor
 
-Semiconductor device made of three alternating layers of doped semiconductor material, either "NPN" or "PNP".
+Semiconductor solid-state device made of three alternating layers of doped semiconductor material, either "NPN" or "PNP".
 
 Contains three terminals: Collector (C), Emitter (E), and Base (B)
 
