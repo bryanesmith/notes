@@ -92,8 +92,6 @@ For **amplifiers**, the ratio of the collector current to the base current is ca
     - **N-type doping** adds impurities with extra valence electrons. (E.g., phosophorous has 5 covalent electrons, silicon has 4 covalent eletrons; so with covalent bonding, there's a free covalent electron to move around.)
     - **P-type doping** adds impurities with fewer valence electrons, creating holes. (E.g., aluminum has 3 covalent electrons, silicon has 4 covalent electrons; so with covalent bonding, they are missing a covalent electron, creating a postively-charged hole)
 
-* **metallic bonds**: 
-
 * **semiconductor**: material with a conduction band close to the valence shell; requires some energy to conduct, but can also act as insulator
 
 * **signals**: physical quantities carrying information, e.g., audio, image, telecommunications
