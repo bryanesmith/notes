@@ -32,3 +32,7 @@
 ```sh
 % go test
 ```
+
+## Links
+
+* [Go Standard library](https://pkg.go.dev/std)
