@@ -2,20 +2,24 @@
 
 ## Setup
 
-1. ```
+1. Install dependencies:
+
+```
 % pip install "aisuite[all]"
 % pip install uv
 ```
 
-2. Set AISUITE_MODEL. E.g.,
+2. Export environment variable:
 ```sh
 export AISUITE_MODEL="anthropic:claude-sonnet-4-5"
+
 # export AISUITE_MODEL="openai:gpt-5.1"
 ```
 
 3. Export API key for selected model. E.g.,
 ```sh
 export ANTHROPIC_API_KEY=...
+
 # export OPENAI_API_KEY=...
 ```
 
