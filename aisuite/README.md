@@ -2,7 +2,10 @@
 
 ## Setup
 
-1. `pip install "aisuite[all]"`
+1. ```
+% pip install "aisuite[all]"
+% pip install uv
+```
 
 2. Set AISUITE_MODEL. E.g.,
 ```sh
@@ -21,3 +24,5 @@ export ANTHROPIC_API_KEY=...
 1. `tell_joke.py`: Tells a joke in Pirate English. [Source](https://github.com/andrewyng/aisuite)
 
 2. `create_snake_game.py`: Creates Web-based Snake Game, `snake_game.html`. [Source](https://info.deeplearning.ai/claude-opus-4.5-saves-tokens-white-house-boosts-ai-powered-science-amazon-exposes-nova-2-pro-checkpoints-small-models-solve-hard-puzzels-2)
+
+3. `world_weather_dashboard.py`: Creates web-based dashboard of current weather, `weather_dashboard.html`. [Source](https://github.com/andrewyng/aisuite/blob/main/examples/agents/world_weather_dashboard.ipynb)
