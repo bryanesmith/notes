@@ -33,6 +33,10 @@
 % go test
 ```
 
+```sh
+% go mod init [PROJECT_NAME]
+```
+
 ## Links
 
 * [Go Standard library](https://pkg.go.dev/std)
