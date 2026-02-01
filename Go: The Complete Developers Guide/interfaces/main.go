@@ -6,6 +6,7 @@ type bot interface {
 	getGreeting() string
 }
 
+// englishBot, spanishBot implicitly implement bot interface
 type englishBot struct{}
 type spanishBot struct{}
 
