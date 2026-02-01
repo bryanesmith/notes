@@ -2,10 +2,6 @@
 
 [Udemy](https://www.udemy.com/course/go-the-complete-developers-guide)
 
-## Projects
-
-1. [helloworld](helloworld/)
-
 ## Commands
 
 ```sh
@@ -36,6 +32,10 @@
 ```sh
 % go mod init [PROJECT_NAME]
 ```
+
+## Notes
+
+* Structs are pass-by-value, but maps are pass-by-reference
 
 ## Links
 
